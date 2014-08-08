@@ -1,6 +1,6 @@
 package objectGeometry;
 /**
- * @author Fritz Wallace
+ * @author Fritz Wallace and me
  *
  */
 /*
@@ -13,7 +13,7 @@ public class GitTestFile
 
 	public void printTestMessage()
 	{
-		System.out.println("Hello World.");
+		System.out.println("NO");
 	}
 	/*
 	 * Prints out the m
