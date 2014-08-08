@@ -16,6 +16,10 @@ public class GitTestFile
 		System.out.println("NO");
 		System.out.println("YES_TEST");
 	}
+	public void printTestingMessage()
+	{
+		System.out.println("Test");
+	}
 	/*
 	 * Prints out the m
 	 */
@@ -23,6 +27,7 @@ public class GitTestFile
 	{
 		GitTestFile testInstance = new GitTestFile();
 		testInstance.printTestMessage();
+		testInstance.printTestingMessage();
 		
 	}
 }
