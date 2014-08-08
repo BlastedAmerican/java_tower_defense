@@ -10,17 +10,21 @@ package objectGeometry;
  */
 public class GitTestFile 
 {
-	//Did you get this succesfully? Lets mod dota now.
+	//Okay
 	public void printTestMessage()
 	{
 		System.out.println("NO");
 		System.out.println("YES_TEST");
 	}
+<<<<<<< HEAD
 	public void printTestingMessage()
 	{
 		System.out.println("Test");
 		System.out.println("Test2");
 	}
+=======
+
+>>>>>>> edea88e506eeb66d8231f7d653e73f68e5f8ed21
 	/*
 	 * Prints out the m
 	 */
@@ -28,7 +32,6 @@ public class GitTestFile
 	{
 		GitTestFile testInstance = new GitTestFile();
 		testInstance.printTestMessage();
-		testInstance.printTestingMessage();
 		
 	}
 }
