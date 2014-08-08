@@ -19,6 +19,7 @@ public class GitTestFile
 	public void printTestingMessage()
 	{
 		System.out.println("Test");
+		System.out.println("Test2");
 	}
 	/*
 	 * Prints out the m
