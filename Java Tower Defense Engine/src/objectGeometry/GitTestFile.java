@@ -10,7 +10,7 @@ package objectGeometry;
  */
 public class GitTestFile 
 {
-
+	//Did you get this succesfully? Lets mod dota now.
 	public void printTestMessage()
 	{
 		System.out.println("NO");
