@@ -14,6 +14,7 @@ public class GitTestFile
 	public void printTestMessage()
 	{
 		System.out.println("NO");
+		System.out.println("YES_TEST");
 	}
 	/*
 	 * Prints out the m
