@@ -97,6 +97,17 @@ public class Point {
 		yPosition = newYPos;
 	}
 	/*
+	 * Sets the X and Y locations of the point.
+	 * @param float newXPos 
+	 * @param float newYPos
+	 */
+	public void setPosition(float newXPos, float newYPos )
+	{
+		this.setYPosition(newYPos);
+		this.setXPosition(newXPos);
+	}
+	
+	/*
 	 * Sets the point linked 
 	 */
 	public void addLinkedPoint( Point newLinkedPoint )
@@ -177,6 +188,12 @@ public class Point {
 				return false;
 			}
 		
+	}
+	public String print()
+	{
+		String infoString = "( X: " + this.getXPos() + "Y: " + this.getXPos() +
+				"Links: "+ this.connectedPoints + " )";
+		return infoString;
 	}
 	
 	
