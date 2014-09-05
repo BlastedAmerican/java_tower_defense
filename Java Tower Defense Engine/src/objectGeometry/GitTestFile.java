@@ -1,6 +1,6 @@
 package objectGeometry;
 /**
- * @author Fritz Wallace and me
+ * @author Fritz Wallace and Robert Fenner
  *
  */
 /*
@@ -16,15 +16,20 @@ public class GitTestFile
 		System.out.println("NO");
 		System.out.println("YES_TEST");
 	}
+/*<<<<<<< HEAD
+
+=======
 <<<<<<< HEAD
+*/
 	public void printTestingMessage()
 	{
 		System.out.println("Test");
 		System.out.println("Test2");
 	}
-=======
+/*=======
 
 >>>>>>> edea88e506eeb66d8231f7d653e73f68e5f8ed21
+>>>>>>> upstream/master
 	/*
 	 * Prints out the m
 	 */
