@@ -1,0 +1,52 @@
+package objectGeometry;
+import java.util.*;
+
+public class ShapeBase implements Shape;
+{
+	protected ArrayList<Point> PointList;
+	protected Point keyPoint;
+	@Override
+	public void setLocation(float xPos, float yPos) 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setZLevel(int zLevel) 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public ArrayList<ArrayList<Point>> getPointPairs() 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public boolean overlaps(Shape checkObject) 
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void moveBy(float xPos, float yPos) 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public Shape copy() 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public ArrayList<Point> getPoints() 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

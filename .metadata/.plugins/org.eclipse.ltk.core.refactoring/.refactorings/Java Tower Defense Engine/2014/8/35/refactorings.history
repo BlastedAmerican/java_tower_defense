@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;objectGeometry.Shape&apos; to &apos;ShapeBase&apos;&#x0A;- Original project: &apos;Java Tower Defense Engine&apos;&#x0A;- Original element: &apos;objectGeometry.Shape&apos;&#x0A;- Renamed element: &apos;objectGeometry.ShapeBase&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Shape&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;objectGeometry{Shape.java[Shape" matchStrategy="1" name="ShapeBase" qualified="false" references="true" similarDeclarations="false" stamp="1409430250256" textual="false" version="1.0"/>
+</session>

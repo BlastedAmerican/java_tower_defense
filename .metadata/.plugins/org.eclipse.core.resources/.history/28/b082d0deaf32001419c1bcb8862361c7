@@ -1,0 +1,10 @@
+package objectGeometry;
+
+public class Rectangle extends ShapeBase implements Shape {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

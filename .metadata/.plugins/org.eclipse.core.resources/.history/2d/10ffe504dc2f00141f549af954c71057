@@ -1,0 +1,51 @@
+package objectGeometry;
+
+import java.util.ArrayList;
+
+
+/*
+ * Point is a simple object that repersents
+ * a theoretical point on an infinite grid. 
+ * It has no volume, orientation, or other
+ * information, and simply a single point.
+ * 
+ */
+public class Point {
+
+	protected float xPosition;
+	protected float yPosition;
+	protected ArrayList<Point> connectedPoints;
+	
+	/*
+	 * Basic point constructor. 
+	 * Creates a point with no connections, 
+	 * at position 0,0;
+	 */
+	public Point()
+	{
+		xPosition = 0;
+		yPosition = 0;
+	}
+	/*
+	 * Basic point constructor. Takes
+	 * an x and y position. 
+	 * No connections, created at the passed location.
+	 */
+	public Point( float xPos, float yPos )
+	{
+		
+	}
+	/*
+	 * 
+	 */
+	public Point( float xPos, float yPos, ArrayList<Point> linkedPoints )
+	{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

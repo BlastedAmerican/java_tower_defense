@@ -1,0 +1,10 @@
+package objectGeometry;
+import java.util.*;
+
+public class Shape 
+{
+	protected ArrayList<Point> PointList;
+	protected Point keyPoint;
+	
+
+}

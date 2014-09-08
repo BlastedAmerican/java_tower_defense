@@ -1,0 +1,5 @@
+package objectGeometry;
+
+public interface Shape {
+
+}

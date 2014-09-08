@@ -1,0 +1,12 @@
+package objectGeometry;
+import java.util.ArrayList;
+
+public interface Shape 
+{
+	public void setLocation( float xPos, float yPos);
+	public void setZLevel( int zLevel );
+	public ArrayList<ArrayList<Point>> getPointPairs();
+	public boolean overlaps( Shape checkObject );
+	
+
+}

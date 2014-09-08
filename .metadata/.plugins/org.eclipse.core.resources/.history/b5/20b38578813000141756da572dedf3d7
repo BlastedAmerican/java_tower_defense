@@ -1,0 +1,157 @@
+package objectGeometry;
+
+import java.util.ArrayList;
+
+
+/*
+ * Point is a simple object that repersents
+ * a theoretical point on an infinite grid. 
+ * It has no volume, orientation, or other
+ * information, and simply a single point.
+ * @Author Fritz Wallace
+ * 
+ */
+public class Point {
+
+	protected float xPosition;
+	protected float yPosition;
+	protected ArrayList<Point> connectedPoints;
+	
+	/*
+	 * Basic point constructor. 
+	 * Creates a point with no connections, 
+	 * at position 0,0;
+	 */
+	public Point()
+	{
+		xPosition = 0;
+		yPosition = 0;
+		connectedPoints = new ArrayList<Point>();
+	}
+	/*
+	 * Basic point constructor. Takes
+	 * an x and y position. 
+	 * No connections, created at the passed location.
+	 * @param float yPos
+	 * @param float xPos 
+	 */
+	public Point( float xPos, float yPos )
+	{
+		xPosition = xPos;
+		yPosition = yPos;
+		connectedPoints = new ArrayList<Point>();
+	}
+	/*
+	 * More complex point constructor. Takes 2 points and an ArrayList 
+	 * of points.
+	 * @param float yPos
+	 * @param float xPos 
+	 * @param ArrayList<Point> linkedPoints
+	 */
+	public Point( float xPos, float yPos, ArrayList<Point> linkedPoints )
+	{
+		xPos = xPosition;
+		yPos = yPosition;
+		if( linkedPoints != null)
+		{
+			connectedPoints = new ArrayList<Point>(linkedPoints);
+		}
+		else
+		{
+			connectedPoints = new ArrayList<Point>();
+		}
+		
+	}
+	/*
+	 * Returns the xPosition
+	 * @param float xPosition
+	 * 
+	 */
+	public float getXPos()
+	{
+		return xPosition;
+	}
+	/*
+	 * Returns the yPosition
+	 * @param float yPosition
+	 * 
+	 */
+	public float getYPos()
+	{
+		return yPosition;
+	}
+	/*
+	 * Sets the XPosition of the of the Point
+	 * @param float newXPos
+	 */
+	public void setXPosition(float newXPos)
+	{
+		xPosition = newXPos;
+	}
+	/*
+	 * Sets the YPosition of the of the Point
+	 * @param float newYPos
+	 */
+	public void setYPosition(float newYPos)
+	{
+		yPosition = newYPos;
+	}
+	/*
+	 * Sets the point linked 
+	 */
+	public void addLinkedPoint( Point newLinkedPoint )
+	{
+		connectedPoints.add(newLinkedPoint);
+	}
+	/*
+	 * Removes a point. The point is checked aghainst 
+	 * the float values, and cannot be checked aghainst the
+	 * point, as that would require having the exact point
+	 * as stored in memory.
+	 */
+	public boolean removeLinkedPoint( Point pointToDelink )
+	{
+		float delinkX = pointToDelink.getXPos();
+		float delinkY = pointToDelink.getYPos();
+		
+		for( Point checkPoint: connectedPoints )
+		{
+			if( checkPoint.getXPos() == delinkX &&
+					checkPoint.getYPos() == delinkY)
+			{
+				connectedPoints.remove(checkPoint);
+				return true;
+			}
+			
+		}
+		return false;
+	}
+	public boolean comparePoint( Point comparedPoint)
+	{
+		float compareX = comparedPoint.getXPos();
+		float compareY = comparedPoint.getYPos();
+		
+			if( checkPoint.getXPos() == delinkX &&
+					checkPoint.getYPos() == delinkY)
+			{
+				
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		
+	}
+	
+	
+	/*
+	 * Main method. 
+	 */
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
